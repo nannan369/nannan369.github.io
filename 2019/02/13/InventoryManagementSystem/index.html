@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="原型,进销存,">
 
 
 
@@ -80,13 +80,14 @@
 
 
 <meta name="description" content="钢银进销存产品是基于SaaS 模式的钢贸行业ERP系统，可以对钢材贸易的全过程进行管理和监控。产品分为客户平台和后台管理系统，涉及的业务模块包括：首页、采购、销售、库存、库存服务、财务、客户、及系统。钢银进销存产品是基于SaaS 模式的钢贸行业ERP系统，可以对钢材贸易的全过程进行管理和监控。SaaS 模式的进销存系统可以大幅降低企业信息化建设的硬件和维护成本，企业只需要一个账号就可以进行企业贸易">
+<meta name="keywords" content="原型,进销存">
 <meta property="og:type" content="article">
 <meta property="og:title" content="钢银进销存">
 <meta property="og:url" content="http://yoursite.com/2019/02/13/InventoryManagementSystem/index.html">
-<meta property="og:site_name" content="吴难">
+<meta property="og:site_name" content="吴难的小小仓库">
 <meta property="og:description" content="钢银进销存产品是基于SaaS 模式的钢贸行业ERP系统，可以对钢材贸易的全过程进行管理和监控。产品分为客户平台和后台管理系统，涉及的业务模块包括：首页、采购、销售、库存、库存服务、财务、客户、及系统。钢银进销存产品是基于SaaS 模式的钢贸行业ERP系统，可以对钢材贸易的全过程进行管理和监控。SaaS 模式的进销存系统可以大幅降低企业信息化建设的硬件和维护成本，企业只需要一个账号就可以进行企业贸易">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-13T07:34:00.203Z">
+<meta property="og:updated_time" content="2019-02-13T11:07:42.763Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="钢银进销存">
 <meta name="twitter:description" content="钢银进销存产品是基于SaaS 模式的钢贸行业ERP系统，可以对钢材贸易的全过程进行管理和监控。产品分为客户平台和后台管理系统，涉及的业务模块包括：首页、采购、销售、库存、库存服务、财务、客户、及系统。钢银进销存产品是基于SaaS 模式的钢贸行业ERP系统，可以对钢材贸易的全过程进行管理和监控。SaaS 模式的进销存系统可以大幅降低企业信息化建设的硬件和维护成本，企业只需要一个账号就可以进行企业贸易">
@@ -125,7 +126,7 @@
 
 
 
-  <title>钢银进销存 | 吴难</title>
+  <title>钢银进销存 | 吴难的小小仓库</title>
   
 
 
@@ -155,7 +156,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">吴难</span>
+        <span class="site-title">吴难的小小仓库</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -271,7 +272,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="吴难">
+      <meta itemprop="name" content="吴难的小小仓库">
     </span>
 
     
@@ -301,6 +302,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/原型文件/" itemprop="url" rel="index">
+                    <span itemprop="name">原型文件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -366,6 +389,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/原型/" rel="tag"># 原型</a>
+          
+            <a href="/tags/进销存/" rel="tag"># 进销存</a>
+          
+        </div>
       
 
       
@@ -471,7 +502,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -697,6 +746,15 @@
         guest_info:guest,
         pageSize:'10' || 10,
     });
+	
+	//新增以下代码即可，可以移除.info下所有子节点。
+	var infoEle = document.querySelector('#comments .info');
+	if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+	infoEle.childNodes.forEach(function(item) {
+    item.parentNode.removeChild(item);
+	});
+	}
+
   </script>
 
 

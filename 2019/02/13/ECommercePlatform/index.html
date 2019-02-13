@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="原型,App,">
 
 
 
@@ -80,13 +80,14 @@
 
 
 <meta name="description" content="鸿网电商平台是鸿网管理后台系统的客户PC端，旨在给予交易客户（包括买家和卖家）便捷的线上交易平台，涉及的业务模块包括：首页、资源商城、采购信息、鸿网金融、鸿网物流、物性表及完整的线上会员中心。客户只需要进行会员的开通就可以享受在鸿网上的采购原料服务，后续进行会员资质认证可以享受在鸿网的其他类金融服务。 产品原型地址：鸿网电商平台">
+<meta name="keywords" content="原型,App">
 <meta property="og:type" content="article">
 <meta property="og:title" content="鸿网电商平台">
 <meta property="og:url" content="http://yoursite.com/2019/02/13/ECommercePlatform/index.html">
-<meta property="og:site_name" content="吴难">
+<meta property="og:site_name" content="吴难的小小仓库">
 <meta property="og:description" content="鸿网电商平台是鸿网管理后台系统的客户PC端，旨在给予交易客户（包括买家和卖家）便捷的线上交易平台，涉及的业务模块包括：首页、资源商城、采购信息、鸿网金融、鸿网物流、物性表及完整的线上会员中心。客户只需要进行会员的开通就可以享受在鸿网上的采购原料服务，后续进行会员资质认证可以享受在鸿网的其他类金融服务。 产品原型地址：鸿网电商平台">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-13T07:45:37.451Z">
+<meta property="og:updated_time" content="2019-02-13T11:08:12.747Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="鸿网电商平台">
 <meta name="twitter:description" content="鸿网电商平台是鸿网管理后台系统的客户PC端，旨在给予交易客户（包括买家和卖家）便捷的线上交易平台，涉及的业务模块包括：首页、资源商城、采购信息、鸿网金融、鸿网物流、物性表及完整的线上会员中心。客户只需要进行会员的开通就可以享受在鸿网上的采购原料服务，后续进行会员资质认证可以享受在鸿网的其他类金融服务。 产品原型地址：鸿网电商平台">
@@ -125,7 +126,7 @@
 
 
 
-  <title>鸿网电商平台 | 吴难</title>
+  <title>鸿网电商平台 | 吴难的小小仓库</title>
   
 
 
@@ -155,7 +156,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">吴难</span>
+        <span class="site-title">吴难的小小仓库</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -271,7 +272,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="吴难">
+      <meta itemprop="name" content="吴难的小小仓库">
     </span>
 
     
@@ -301,6 +302,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/原型文件/" itemprop="url" rel="index">
+                    <span itemprop="name">原型文件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -366,6 +389,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/原型/" rel="tag"># 原型</a>
+          
+            <a href="/tags/App/" rel="tag"># App</a>
+          
+        </div>
       
 
       
@@ -475,7 +506,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -701,6 +750,15 @@
         guest_info:guest,
         pageSize:'10' || 10,
     });
+	
+	//新增以下代码即可，可以移除.info下所有子节点。
+	var infoEle = document.querySelector('#comments .info');
+	if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+	infoEle.childNodes.forEach(function(item) {
+    item.parentNode.removeChild(item);
+	});
+	}
+
   </script>
 
 
